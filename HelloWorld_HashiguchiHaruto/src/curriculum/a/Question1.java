@@ -1,10 +1,12 @@
 package curriculum.a;
 
-public class Question1 {
 /*********************************************
- * [概要]Javaカリキュラム2.6 Java基礎問題1 Q1
+ * [概要]Javaカリキュラム2.7 Java基礎問題1 Q1
  * [詳細]指定された変数の宣言と初期値の設定
  *********************************************/
+
+public class Question1 {
+
 	public static void main(String[] args) {
 		//変数byteNumの初期値設定
 		byte byteNum = 1;

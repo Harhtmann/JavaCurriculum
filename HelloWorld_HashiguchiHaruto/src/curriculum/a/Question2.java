@@ -1,10 +1,12 @@
 package curriculum.a;
 
-public class Question2 {
 /*************************************************
- * [概要]Javaカリキュラム2.6 Java基礎問題1 Q1
+ * [概要]Javaカリキュラム2.7 Java基礎問題1 Q2
  * [詳細]Q1で宣言した変数へ指定された値を代入する
  *************************************************/
+
+public class Question2 {
+
 	public static void main(String[] args) {
 		//変数byteNumの初期値設定
 		byte byteNum = 1;
@@ -34,10 +36,10 @@ public class Question2 {
 		char letter = '1';
 		//変数letterに"a"を代入
 		letter = 'a';
-		//変数lettersの初期値設定
-		String letters = "letters";
-		//変数lettersに"ハロー"を代入
-		letters = "ハロー";
+		//変数letters1の初期値設定
+		String letters1 = "letters";
+		//変数letters2に"ハロー"を代入
+		String letters2 = "ハロー";
 		//変数isBooleanの初期値設定
 		boolean isBoolean = false;
 		//変数isBooleanにtrueを代入
