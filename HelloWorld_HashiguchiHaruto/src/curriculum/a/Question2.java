@@ -164,9 +164,80 @@ public class Question2 {
 				//入力が無効ですと表示する
 				System.out.println( "入力が無効です" );
 			}
+		
+		/*********************************************
+		 * [概要]Javaカリキュラム2.12 Java基礎問題2 Q9
+		 * [詳細]コンソール入力に応じて曜日を表示する
+		 *********************************************/
+		//コンソール入力
+			int day = scanner.nextInt();
+			
+		//switch
+			switch( day ) {
+				case 1:
+					System.out.println( "月曜日" );
+					break;
+					
+				case 2:
+					System.out.println( "火曜日" );
+					break;
+					
+				case 3:
+					System.out.println( "水曜日" );
+					break;
+					
+				case 4:
+					System.out.println( "木曜日" );
+					break;
+					
+				case 5:
+					System.out.println( "金曜日" );
+					break;
+					
+				case 6:
+					System.out.println( "土曜日" );
+					break;
+					
+				case 7:
+					System.out.println( "日曜日" );
+					break;
+					
+				default:
+					System.out.println( "無効な入力です" );
+					break;
+			}
+			
+		/*********************************************
+		 * [概要]Javaカリキュラム2.12 Java基礎問題2 Q10
+		 * [詳細]コンソール入力によって季節を表示する
+		 *********************************************/
+		//コンソール入力
+			int month = scanner.nextInt();
+			
+		//switch
+			switch( month ) {
+				case 1: case 2: case 12:
+					System.out.println( "冬" );
+					break;
+					
+				case 3: case 4: case 5:
+					System.out.println( "春" );
+					break;
+					
+				case 6: case 7: case 8:
+					System.out.println( "夏" );
+					break;
+					
+				case 9: case 10: case 11:
+					System.out.println( "秋" );
+					break;
+					
+				default:
+					System.out.println( "無効な月です" );
+					break;
+			}
 			
 			scanner.close();
-		
 	}
 
 }
