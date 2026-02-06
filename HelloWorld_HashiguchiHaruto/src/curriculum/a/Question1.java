@@ -6,105 +6,70 @@ public class Question1 {
 		/*********************************************
 		 * [概要]Javaカリキュラム2.7 Java基礎問題1 Q1
 		 * [詳細]指定された変数の宣言と初期値の設定
+		 * [改訂]2026/02/06　初期値設定変更
 		 *********************************************/
 		//変数byteNum1の初期値設定
-		byte byteNum1 = 1;
+		byte byteNum1 = 0;
 		//変数shortNum1の初期値設定
-		short shortNum1 = 1;
+		short shortNum1 = 0;
 		//変数intNum1の初期値設定
-		int intNum1 = 1;
+		int intNum1 = 0;
 		//変数longNum1の初期値設定
-		long longNum1 = 1;
+		long longNum1 = 0L;
 		//変数floatNum1の初期値設定
-		float floatNum1 = 1;
+		float floatNum1 = 0.0f;
 		//変数doubleNum1の初期値設定
-		double doubleNum1 = 1;
+		double doubleNum1 = 0.0;
 		//変数letter1の初期値設定
-		char letter1 = 1;
+		char letter1 = '\u0000';
 		//変数letters1の初期値設定
-		String letters1 = "letters";
+		String letters1 = null;
 		//変数isBooleanの初期値設定
 		boolean isBoolean1 = false;
 		
 		/*************************************************
 		 * [概要]Javaカリキュラム2.7 Java基礎問題1 Q2
 		 * [詳細]Q1で宣言した変数へ指定された値を代入する
+		 * [改訂]2026/02/06　変数型宣言と初期値設定処理を一緒にするように変更
 		 *************************************************/
-		//変数byteNum2の初期値設定
-		byte byteNum2 = 1;
 		//変数byteNum2に10を代入
-		byteNum2 = 10;
-		//変数shortNum2の初期値設定
-		short shortNum2 = 1;
+		byte byteNum2 = 10;
 		//変数shortNum2に100を代入
-		shortNum2 = 100;
-		//変数intNum2の初期値設定
-		int intNum2 = 1;
+		short shortNum2 = 100;
 		//変数intNum2に1000を代入
-		intNum2 = 1000;
-		//変数longNum2の初期値設定
-		long longNum2 = 1;
+		int intNum2 = 1000;
 		//変数longNum2に10000を代入
-		longNum2 = 10000;
-		//変数floatNumQ2の初期値設定
-		float floatNum2 = 1;
+		long longNum2 = 10000L;
 		//変数floatNum2に9.5fを代入
-		floatNum2 = 9.5f;
-		//変数doubleNum2の初期値設定
-		double doubleNum2 = 1;
+		float floatNum2 = 9.5f;
 		//変数doubleNum2に10.5を代入
-		doubleNum2 = 10.5;
-		//変数letter2の初期値設定
-		char letter2 = '1';
+		double doubleNum2 = 10.5;
 		//変数letter2に"a"を代入
-		letter2 = 'a';
-		//変数letters12の初期値設定
-		String letters2 = "letters";
+		char letter2 = 'a';
 		//変数letters2Q2に"ハロー"を代入
 		String letters3 = "ハロー";
-		//変数isBoolean2の初期値設定
-		boolean isBoolean2 = false;
 		//変数isBoolean2にtrueを代入
-		isBoolean2 = true;
+		Boolean isBoolean2 = true;
 		
 		/*************************************************
 		* [概要]Javaカリキュラム2.8 Java基礎問題1 Q3
-		* [詳細]値を代入した変数を用いて出力する
+		* [詳細]Q2↑で値を代入した変数を用いて出力する
+		* [改訂]2026/02/06　Q2の変数を使ってprintlnするように変更
 		*************************************************/
-		//変数intNum1Q3を宣言し初期化
-		int intNum3 = 11110;
-		//変数intNum2Q3を宣言し初期化
-		int intNum4 = 20;
-		//変数letter3を宣言し初期化
-		char letter3 = 'a';
-		//変数letters4を宣言し初期化
-		String letters4 = "ハロー";
-		//変数isBoolean3を宣言し初期化
-		boolean isBoolean3 = true;
-		//変数intNum5を宣言し初期化
-		int intNum5 = intNum3 + intNum4;
-		//変数longNum3を宣言し初期化
-		long longNum3 = 10 * 1000 * 1000 * 1000L;
-		//変数doubleNum3を宣言し初期化
-		double doubleNum3 = 10.5 / 100;
-		//変数intNum6を宣言し初期化
-		int intNum6 = 10 - 100;
-
-				
 		//11110を出力
-		System.out.println( intNum3 );
+		System.out.println( longNum2 + intNum2 + shortNum2 + byteNum2 );
 		//20を出力
-		System.out.println( intNum4 );
+		System.out.println( byteNum2 * 2 );
 		//a ハロー trueを出力
-		System.out.println( letter3 + letters4 + isBoolean3 );
+		System.out.println( letter2 + letters3 + isBoolean2 );
 		//11130を出力
-		System.out.println( intNum5 );
+		System.out.println( longNum2 + intNum2 + shortNum2 + byteNum2 + floatNum2 + doubleNum2 );
 		//1000000000000を出力
-		System.out.println( longNum3 );
+		System.out.println( longNum2 * intNum2 * shortNum2 * byteNum2);
 		//0.105を出力
-		System.out.println( doubleNum3 );
+		System.out.println( doubleNum2 / shortNum2 );
 		//-90を出力
-		System.out.println( intNum6 );
+		System.out.println( byteNum2 - shortNum2 );
 		
 		/*************************************************
 		* [概要]Javaカリキュラム2.8 Java基礎問題1 Q4
