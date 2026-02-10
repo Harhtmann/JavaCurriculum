@@ -50,7 +50,7 @@ public class Question3 {
 		 * [詳細]for文を使って1から100まで表示する
 		 *********************************************/
 		//10から1まで表示する
-		for( int i = 1; i >= 100 ; i++ ) {
+		for( int i = 1; i <= 100 ; i++ ) {
 			
 			//表示
 			System.out.println( i );
@@ -155,13 +155,15 @@ public class Question3 {
 		//変数count,total
 		int count5 = 10;
 		
+		//Scanner宣言
+		Scanner scanner = new Scanner( System.in );
+		
 		//10回コンソールに入力したら終了
 		while( count5 >= 0 ) {
 			
 			System.out.println( "あと" + count5 + "回まで入力できます" );
 			
 			//コンソール入力
-			Scanner scanner = new Scanner( System.in );
 			int cnslText = scanner.nextInt();
 			
 			//count5デクリメント

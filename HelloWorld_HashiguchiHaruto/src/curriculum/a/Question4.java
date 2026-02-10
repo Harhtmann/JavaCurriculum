@@ -134,7 +134,7 @@ public class Question4 {
 		num[4] = 20;
 		
 		//変数a
-		Boolean isBoolean = false;
+		boolean isBoolean = false;
 		
 		//コンソール入力
 		Scanner scanner = new Scanner( System.in );
@@ -185,7 +185,7 @@ public class Question4 {
 		
 		//合計
 		for( i = 0; i < array2.length; i++ ) {
-			for( int j = 0; j< array[i].length; j++ ) {
+			for( int j = 0; j< array2[i].length; j++ ) {
 				total2 += array2[i][j];
 			}
 		}
@@ -204,8 +204,8 @@ public class Question4 {
 		int[][] array3 = {{12,15,8},{6,19,25},{30,2,10}};
 		
 		//変数宣言
-		int max2 = 0;
-		int min2 = 0;
+		int max2 = array3[0][0];
+		int min2 = array3[0][0];
 		
 		//判定
 		for( i = 0; i < array3.length; i++ ) {
