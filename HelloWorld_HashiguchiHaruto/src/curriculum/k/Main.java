@@ -30,21 +30,18 @@ public class Main {
 		int max = 10;
 		int hours = new Random().nextInt(max - min + 1) + min;
 		
-		//正社員（fulltime）と契約社員（contract）の名前を設定
-		String fName = "full" ;
-		String cName = "cont" ;
-		
 		//インスタンス（多態性）
-		Billables fS = new FullTimeSalary( "full" , "fulltime" , hours );
-		Billables cS = new ContractSalary( "cont" , "contract" , hours );
+		FullTimeSalary fS = new FullTimeSalary( "full" , "fulltime" , hours );
+		ContractSalary cS = new ContractSalary( "cont" , "contract" , hours );
+		
 		
 		//正社員給料データ　出力
-		System.out.println( fS.eName(fName) + "の給料は" + fS.costForDay(hours) + "円" );
+		System.out.println( fS.eName() + "の給料は" + fS.costForDay() + "円" );
 		
 		System.out.println(""); //改行
 		
 		//契約社員給料データ　出力
-		System.out.println( cS.eName(cName) +  "の給料は" + cS.costForDay(hours) + "円" );
+		System.out.println( cS.eName() +  "の給料は" + cS.costForDay() + "円" );
 	}
 
 }

@@ -7,7 +7,7 @@ package curriculum.h;
 public class PartTimeEmployee extends Employee {
 	
 	//パート社員 1h \1000
-	final int HOURLY_RATE = 1000;
+	private static final int HOURLY_RATE = 1000;
 	
 	//コンストラクタ
 	public PartTimeEmployee( String id, String name ) {

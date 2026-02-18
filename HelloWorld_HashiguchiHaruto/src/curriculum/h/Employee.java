@@ -20,7 +20,7 @@ public abstract class Employee {
 		return this.employeeId;
 	}
 	
-	public String getname() {
+	public String getName() {
 		return this.name;
 	}
 	

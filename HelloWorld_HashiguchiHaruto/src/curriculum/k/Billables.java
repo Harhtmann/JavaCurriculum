@@ -6,8 +6,5 @@ package curriculum.k;
 
 public interface Billables {
 	//給料算出
-	int costForDay( int hoursWorked );
-	
-	//従業員名設定用
-	String eName( String name );
+	int costForDay();
 }

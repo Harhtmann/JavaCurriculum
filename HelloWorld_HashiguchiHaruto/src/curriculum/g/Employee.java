@@ -7,27 +7,27 @@ package curriculum.g;
 public class Employee {
 
 	//private
-	private String EmployeeId;
-	private String Name;
+	private String employeeId;
+	private String name;
 	
 	//getter
 	public String getEmployeeId() {
-		return this.EmployeeId;
+		return this.employeeId;
 	}
 	
 	//setter
-	public void setEmployeeId( String Id ) {
-		this.EmployeeId = Id;
+	public void setEmployeeId( String id ) {
+		this.employeeId = id;
 	}
 	
 	//getter
 	public String getName() {
-		return this.Name;
+		return this.name;
 	}
 	
 	//setter
-	public void setName( String Name ) {
-		this.Name = Name;
+	public void setName( String name ) {
+		this.name = name;
 	}
 	
 }

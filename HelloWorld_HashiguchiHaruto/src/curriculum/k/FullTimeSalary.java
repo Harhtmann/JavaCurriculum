@@ -12,13 +12,12 @@ public class FullTimeSalary extends Employee {
 	
 	//正社員　給料算出
 	@Override
-	public int costForDay(int hoursWorked) {
+	public int costForDay() {
 		int hourlyRate = 1200;
-		return hoursWorked * hourlyRate;
+		return super.getHours() * hourlyRate;
 	}
 	
-	//正社員（fulltime）の名前を設定
-	public String eName(String name) {
-		return name;
+	public String eName() {
+		return super.getName();
 	}
 }

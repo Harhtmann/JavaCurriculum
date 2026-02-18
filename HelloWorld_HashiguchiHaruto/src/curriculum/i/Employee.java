@@ -19,7 +19,7 @@ public abstract class Employee {
 	public String getId() {
 		return this.id; }
 	
-	public String getNmae() {
+	public String getName() {
 		return this.name; }
 	
 	//社員の給料の算出

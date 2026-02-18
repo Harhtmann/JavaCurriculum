@@ -12,13 +12,12 @@ public class ContractSalary extends Employee {
 	
 	//契約社員　給料算出
 	@Override
-	public int costForDay(int hoursWorked) {
+	public int costForDay() {
 		int hourlyRate = 1000;
-		return hoursWorked * hourlyRate;
+		return super.getHours() * hourlyRate;
 	}
 	
-	//契約社員（contract）の名前を設定
-	public String eName(String name) {
-		return name;
+	public String eName() {
+		return super.getName();
 	}
 }

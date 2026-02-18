@@ -13,6 +13,9 @@ public class Person {
 	private double bmi;
 	private int sum;
 	
+	//SUM用カウンター
+	static int counter = 0;
+	
 	  // コンストラクタを定義しインスタンスフィールドに値をセット
 	  Person( String name , int age , double height , double weight , double bmi , int sum ){
 		  this.name = name;
@@ -21,6 +24,7 @@ public class Person {
 		  this.weight = weight;
 		  this.bmi = bmi;
 		  this.sum = sum;
+		  counter++;
 	  }
 	  
 	  //getメソッド
@@ -53,6 +57,6 @@ public class Person {
 		    System.out.println( "名前は" + this.name + "です" );
 		    System.out.println( "年は" + this.age + "です" );
 		    System.out.println( "BMIは" + this.bmi + "です" );
-		    System.out.println( "合計" + this.sum + "です" );
+		    System.out.println( "合計" + Person.counter + "です" );
 	  }
 }
