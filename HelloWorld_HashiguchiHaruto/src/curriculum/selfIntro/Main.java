@@ -18,13 +18,15 @@ public class Main {
 		int max2 = 2;
 		int height = new Random().nextInt(max2 - min2 + 1) + min2; //ランダム身長
 		
-		double bmiMath = weight / (height * height); //BMI値の計算
-		
 		//インスタンス化
-		Person person1 = new Person("鈴木太郎", 20, 1.7 ,60 ,bmiMath , 0);
-	    
+		Person person1 = new Person("鈴木太郎", 20, weight, height ,0);
+		
 	    //自己紹介内容を出力
 	    person1.print();
+	    
+	    System.out.println( "BMIは" + person1.getBmi() + "です" );
+	    
+	    person1.print2();
 
 	}
 

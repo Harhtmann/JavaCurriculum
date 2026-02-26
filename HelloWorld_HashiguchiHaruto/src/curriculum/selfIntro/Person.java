@@ -11,19 +11,17 @@ public class Person {
 	private double height;
 	private double weight;
 	private double bmi;
-	private int sum;
 	
 	//SUM用カウンター
 	static int counter = 0;
 	
 	  // コンストラクタを定義しインスタンスフィールドに値をセット
-	  Person( String name , int age , double height , double weight , double bmi , int sum ){
+	  Person( String name , int age , double height , double weight ,double bmi){
 		  this.name = name;
 		  this.age = age;
 		  this.height = height;
 		  this.weight = weight;
 		  this.bmi = bmi;
-		  this.sum = sum;
 		  counter++;
 	  }
 	  
@@ -36,27 +34,18 @@ public class Person {
 		  return this.age;
 	  }
 	  
-	  public double getHeight() {
-		  return this.height;
-	  }
-	  
-	  public double getWeight() {
-		  return this.weight;
-	  }
-	  
 	  public double getBmi() {
-		  return this.bmi;
+		  return this.bmi = this.weight / (this.height * this.height) ;
 	  }
 	  
-	  public double getSum() {
-		  return this.sum;
-	  }
-	  
-	  //自己紹介内容を出力
+	  //自己紹介内容(名前、年齢)を出力
 	  public void print() {
 		    System.out.println( "名前は" + this.name + "です" );
 		    System.out.println( "年は" + this.age + "です" );
-		    System.out.println( "BMIは" + this.bmi + "です" );
+	  }
+	  
+	  //合計を出力
+	  public void print2() {
 		    System.out.println( "合計" + Person.counter + "です" );
 	  }
 }

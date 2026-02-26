@@ -1,0 +1,12 @@
+=== バトルログ ===
+Daemon が攻撃 → 006 HP: 63
+006 が攻撃 → Daemon HP: 66
+Daemon が攻撃 → 006 HP: 51
+006 が攻撃 → Daemon HP: 47
+Daemon が攻撃 → 006 HP: 39
+006 が攻撃 → Daemon HP: 28
+Daemon が攻撃 → 006 HP: 27
+006 が攻撃 → Daemon HP: 9
+Daemon が攻撃 → 006 HP: 15
+006 が攻撃 → Daemon HP: -10
+勝者: 006
